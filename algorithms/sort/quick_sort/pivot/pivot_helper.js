@@ -7,7 +7,7 @@ function pivot(arr, start=0, end=arr.length-1) {
     let pivot = arr[start];
     let swapIndex = start;
 
-    for (let i = start + 1; i < arr.length; i++) {
+    for (let i = start + 1; i <= end; i++) {
         if (pivot > arr[i]) {
             swapIndex++; // one element at least is less than our pivot
             swap(arr, swapIndex, i);
@@ -21,3 +21,7 @@ function pivot(arr, start=0, end=arr.length-1) {
 
 const o = pivot([4,8,2,1,5,7,6,3]) // output: 3
 console.log(o);
+
+module.exports = {
+    pivot,
+}
