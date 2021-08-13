@@ -22,10 +22,4 @@ function bubbleSort(arr) {
     return arr;
 }
 
-/**
- * Time complexity:
- * In general, it's O(n*2): because of the nested loop.
- * The best case scenario (nearly sorted): it's more like O(n).
-*/
-
 bubbleSort([37,45,29,8]);

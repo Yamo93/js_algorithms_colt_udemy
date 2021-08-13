@@ -1,21 +1,3 @@
-// time complexity (same for worst, average, best): O(n log n)
-// why is it the same? because it doesnt care, it will operate the same way on every possible input
-
-// why is it O(n log n)? if we have 8 items in an array, we need to split it 3 times. 
-// if we have 32 items, we need to split it 5 times.
-// as N grows to 32, we have 5 splits. when N was 8, we have 3 splits. that's log base 2 of n. (2 of what power gives us n)
-// 2 * 2 * 2 = 8
-
-// what about the n? as N grows, the merge algorithm has time complexity of O(n), a linear comparison.
-
-// summary: O(log n) decompositions, O(n) comparisons per decomposition = O(n log n)
-// merge: O(n), the merge function has linear complexity
-// mergeSort: O(n log n)
-// in total: O(n log n)
-
-// space complexity: O(n). we have to use more space than bubble sort which has constant space. 
-// but we still care more about time than space.
-
 function mergeSort(arr) {
     if (arr.length <= 1) return arr;
     let mid = Math.floor(arr.length/2);
