@@ -1,3 +1,9 @@
+# Binary Search
+
+## Time complexity
+
+The time complexity of binary search is O(log(N)).
+
 # Binary Search Exercise
 
 Write a function called `binarySearch` which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1.
