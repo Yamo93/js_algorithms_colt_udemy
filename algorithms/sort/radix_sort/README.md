@@ -4,7 +4,7 @@ Radix sort is a special sorting algorithm that works on lists of numbers. Radix 
 
 We look at each number and place it in a bucket of its first digit from the right. Then, we form them back into a list keeping the order that they are in. Now, their last digits are sorted. Now, we repeat it, but we look at the second digit from the right. One-digit numbers don't have anything, so we put them in the zero bucket. Think of it as "7 == 07".
 
-The number of times we have to do this process depends on the amunt of digits in the largest number.
+The number of times we have to do this process depends on the amount of digits in the largest number.
 
 When we are done with the grouping, we form them into the list by adding them from the bottom (because every group will now be sorted).
 
